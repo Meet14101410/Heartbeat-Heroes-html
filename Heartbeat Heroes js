@@ -1,0 +1,10 @@
+function startGame() {
+  let heartRate = Math.floor(Math.random() * 41) + 60; // 60–100 BPM
+  let status = document.getElementById("status");
+
+  if (heartRate >= 60 && heartRate <= 100) {
+    status.innerHTML = `❤️ Heart Rate: ${heartRate} BPM<br>Patient is Stable!`;
+  } else {
+    status.innerHTML = `⚠️ Heart Rate: ${heartRate} BPM<br>Emergency!`;
+  }
+}
